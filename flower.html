@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Our Flowers - Blossom Boutique</title>
+  <style>
+    body {
+      font-family: Arial;
+      background-color: #fff0f5;
+      margin: 0;
+    }
+    header, footer {
+      background-color: #ff69b4;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+    nav {
+      background-color: #ffe4e1;
+      text-align: center;
+      padding: 10px;
+    }
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #d63384;
+      font-weight: bold;
+    }
+    .flowers {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      padding: 30px;
+      gap: 20px;
+    }
+    .flower {
+      background-color: #fff;
+      padding: 15px;
+      width: 200px;
+      border-radius: 10px;
+      box-shadow: 0 0 8px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+    .flower img {
+      width: 100%;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Our Flowers</h1>
+  </header>
+
+  <nav>
+    <a href="C:\Users\ASUS\Desktop\web\homepage.html">Home</a>
+    <a href="C:\Users\ASUS\Desktop\web\homepage.html">Flowers</a>
+    <a href="C:\Users\ASUS\Desktop\web\homepage.html">About</a>
+    <a href="C:\Users\ASUS\Desktop\web\homepage.html">Contact us</a>
+   
+  </nav>
+
+  <section class="flowers">
+   <div class="flower">
+      <h3>Red Roses</h3>
+      <img src="C:\Users\ASUS\Desktop\html images\red rose.jpeg" alt="Red Roses"width="150px"height="150px";>
+      <p>Price: $15</p>
+      <label>Quantity:
+    <input type="number" id="qty-red-rose" value="1" min="1" onchange="updateTotal('red rose', 10)">
+  </label>
+  <p>Total: $<span id="total-red rose">15</span></p>
+
+  <h4>Payment Details</h4>
+  <input type="text" placeholder="Your Name"><br><br>
+  <input type="text" placeholder="Account Number"><br><br>
+      <button onclick="alert('Thankyou for buying Red Roses')">Buy Now</button>
+    </div>
+
+    <div class="flower">
+      <h3>Yellow Roses</h3>
+      <img src="C:\Users\ASUS\Desktop\html images\yellow rose.jpeg"alt="Yellow Roses"width="150px"height="150px";>
+      <p>Price: $15</p>
+      <label>Quantity:
+    <input type="number" id="qty-yellow rose" value="1" min="1" onchange="updateTotal('Yellow rose', 10)">
+  </label>
+  <p>Total: $<span id="total-yellow rose">15</span></p>
+
+  <h4>Payment Details</h4>
+  <input type="text" placeholder="Your Name"><br><br>
+  <input type="text" placeholder="Account Number"><br><br>
+      <button onclick="alert('Thankyou for buying Yellow Roses')">Buy Now</button>
+    </div>
+
+    <div class="flower">
+      <h3>White Roses</h3>
+      <img src="C:\Users\ASUS\Desktop\html images\white rose.jpeg" alt="White Roses"width="150px"height="150px";>
+      <p>Price: $15</p><label>Quantity:
+    <input type="number" id="qty-White Roses" value="1" min="1" onchange="updateTotal('White Roses', 10)">
+  </label>
+  <p>Total: $<span id="total-White Roses">15</span></p>
+
+  <h4>Payment Details</h4>
+  <input type="text" placeholder="Your Name"><br><br>
+  <input type="text" placeholder="Account Number"><br><br>
+      <button onclick="alert('Thankyou for buying White Roses')">Buy Now</button>
+    </div>
+
+    <div class="flower">
+      <h3>Hibiscus</h3>
+      <img src="C:\Users\ASUS\Desktop\html images\hibiscus.jpeg" alt="Hibiscus"width="150px"height="150px";>
+      <p>Price: $15</p><label>Quantity:
+    <input type="number" id="qty-Hibiscus" value="1" min="1" onchange="updateTotal('Hibiscus', 10)">
+  </label>
+  <p>Total: $<span id="total-Hibiscus">15</span></p>
+
+  <h4>Payment Details</h4>
+  <input type="text" placeholder="Your Name"><br><br>
+  <input type="text" placeholder="Account Number"><br><br>
+      <button onclick="alert('Thankyou for buying Hibiscus')">Buy Now</button>
+    </div>
+
+    <div class="flower">
+      <h3>Jasmine</h3>
+      <img src="C:\Users\ASUS\Desktop\html images\jasmine.jpeg" alt="Jasmine"width="150px"height="150px";>
+      <p>Price: $50</p>
+      <label>Per KG:
+    <input type="number" id="kg-Jasmine" value="1" min="1" onchange="updateTotal('Jasmine', 10)">
+  </label>
+  <p>Total: $<span id="total-Jasmine">50</span></p>
+
+  <h4>Payment Details</h4>
+  <input type="text" placeholder="Your Name"><br><br>
+  <input type="text" placeholder="Account Number"><br><br>
+      <button onclick="alert('Thankyou for buying Jasmine')">Buy Now</button>
+    </div>
+
+    <div class="flower">
+      <h3>Sunflowers</h3>
+      <img src="C:\Users\ASUS\Desktop\html images\sunflower.jpeg"alt="Sunflowers"width="150px"height="150px";>
+      <p>Price: $12</p>
+      <label>Quantity:
+    <input type="number" id="qty-Sunflower" value="1" min="1" onchange="updateTotal('Sunflowers', 10)">
+  </label>
+  <p>Total: $<span id="total-Sunflowers">12</span></p>
+
+  <h4>Payment Details</h4>
+  <input type="text" placeholder="Your Name"><br><br>
+  <input type="text" placeholder="Account Number"><br><br>
+      <button onclick="alert('Thankyou for buying Sunflowers')">Buy Now</button>
+    </div>
+
+    <div class="flower">
+      <h3>Tulips</h3>
+      <img src="C:\Users\ASUS\Desktop\html images\tulip.jpeg" alt="Tulips"width="150px"height="150px";>
+      <p>Price: $10</p>
+      <label>Quantity:
+    <input type="number" id="qty-tulips" value="1" min="1" onchange="updateTotal('tulips', 10)">
+  </label>
+  <p>Total: $<span id="total-tulips">10</span></p>
+
+  <h4>Payment Details</h4>
+  <input type="text" placeholder="Your Name"><br><br>
+  <input type="text" placeholder="Account Number"><br><br>
+ 
+  <button onclick="alert('Thankyou for buying Tulips')">Buy Now</button>
+
+    </div>
+
+    <div class="flower">
+      <h3>Lotus</h3>
+      <img src="C:\Users\ASUS\Desktop\html images\lotus.jpeg" alt="Lotus"width="150px"height="150px";>
+      <p>Price: $10</p><label>Quantity:
+    <input type="number" id="qty-Lotus" value="1" min="1" onchange="updateTotal('Lotus', 10)">
+  </label>
+  <p>Total: $<span id="total-Lotus">10</span></p>
+
+  <h4>Payment Details</h4>
+  <input type="text" placeholder="Your Name"><br><br>
+  <input type="text" placeholder="Account Number"><br><br>
+      <button onclick="alert('Thankyou for buying Lotus')">Buy Now</button>
+    </div>
+
+    <div class="flower">
+      <h3>Butterfly pea</h3>
+      <img src="C:\Users\ASUS\Desktop\html images\butterfly pea.jpeg"alt="Butterfly pea"width="150px"height="150px";>
+      <p>Price: $10</p>
+      <label>Quantity:
+    <input type="number" id="qty-Butterfly pea" value="1" min="1" onchange="updateTotal('Butterfly pea', 10)">
+  </label>
+  <p>Total: $<span id="total-Butterfly pea">10</span></p>
+
+  <h4>Payment Details</h4>
+  <input type="text" placeholder="Your Name"><br><br>
+  <input type="text" placeholder="Account Number"><br><br>
+      <button onclick="alert('Thankyou for buying Butterfly pea')">Buy Now</button>
+    </div>
+
+    <div class="flower">
+      <h3>Marigold</h3>
+      <img src="C:\Users\ASUS\Desktop\html images\marigold.jpeg" alt="Marigold"width="150px"height="150px";>
+      <p>Price: $10</p>
+      <label>Quantity:
+    <input type="number" id="qty-Marigold" value="1" min="1" onchange="updateTotal('Marigold', 10)">
+  </label>
+  <p>Total: $<span id="total-Marigold">10</span></p>
+
+  <h4>Payment Details</h4>
+  <input type="text" placeholder="Your Name"><br><br>
+  <input type="text" placeholder="Account Number"><br><br>
+      <button onclick="alert('Thankyou for buying Marigold')">Buy Now</button>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Blossom Boutique</p>
+  </footer>
+
+</body>
+</html>
